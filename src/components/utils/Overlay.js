@@ -28,7 +28,7 @@ function Overlay({ connect, icon, title }) {
       show={showTooltip}
       overlay={
         <Popover
-          id={`popover-positioned-${'bottom'}`}
+          id={`popover-positioned-${icon}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

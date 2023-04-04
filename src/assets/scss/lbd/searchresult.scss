@@ -146,6 +146,8 @@
   position: relative;
   display: inline-block;
   opacity: 1 !important;
+  z-index: 1;
+  font-size: 16px !important;
 }
 
 .tooltip .tooltiptext {
