@@ -1,0 +1,151 @@
+.navbar-expand-lg {
+  padding: 0px !important;
+  background-color: white !important;
+  border-bottom: 1px solid lightgray;
+
+  .nav-link {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  .navbar-expand {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .nav-link:hover {
+    color: cornflowerblue;
+  }
+
+  .active {
+    color: cornflowerblue !important;
+  }
+
+  .bi {
+    font-size: 18px;
+    margin-right: 6px;
+  }
+}
+
+.search-form {
+  height: 35px;
+
+  button {
+    border-radius: 15px;
+    margin-right: 20px;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+  }
+
+  input {
+    width: 250px;
+    border-radius: 0px;
+    box-shadow: none !important;
+  }
+}
+
+.popover {
+  width: 500px !important;
+  max-width: 600px !important;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+
+  .popover-arrow {
+    display: none !important;
+  }
+}
+
+.overlay-body {
+  padding: 0px !important;
+  cursor: pointer;
+
+  .overlay-row {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .overlay-item {
+    padding: 15px 20px 15px 20px !important;
+  }
+
+  .overlay-item:hover {
+    background-color: rgb(243, 243, 243);
+
+    .submenu-title {
+      color: cornflowerblue;
+    }
+  }
+
+  .submenu-title {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .submenu-desc {
+    color: gray;
+    font-size: 14px;
+  }
+
+  .submenu-icon {
+    color: cornflowerblue;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+}
+
+.search-popover {
+  width: 600px !important;
+  border-radius: 5px;
+
+  .search-overlay-body {
+    padding: 0px;
+    color: gray;
+
+    .search-bottom {
+      padding-bottom: 80px;
+    }
+
+    div {
+      padding: 20px;
+      border-bottom: 1px solid lightgray;
+
+      div {
+        padding: 5px 0px 5px 0px;
+        border-bottom: none;
+
+        i {
+          margin-right: 0px;
+        }
+
+        .search-plus {
+          margin-right: 10px;
+          background-color: rgb(243, 243, 243);
+          color: gray;
+          text-decoration: none;
+          border-radius: 3px;
+        }
+
+        .search-choice {
+          margin-left: 20px;
+          text-decoration: none;
+          color: gray;
+        }
+
+        .search-choice:hover {
+          color: blue;
+        }
+      }
+    }
+  }
+}
+
+.search-focused {
+  width: 600px !important;
+}

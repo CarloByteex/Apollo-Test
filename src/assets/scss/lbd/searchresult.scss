@@ -1,0 +1,221 @@
+.search-result {
+  padding: 0px;
+  background-color: rgb(243, 243, 243);
+  max-height: calc(100vh - 91px);
+}
+
+.table-container {
+  padding-top: 10px;
+  height: calc(100% - 97px);
+
+  .table-wrapper {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 100%;
+    overflow: auto;
+
+    .table {
+      cursor: pointer;
+      background-color: white;
+      height: 100%;
+
+      th {
+        text-align: left;
+        color: lightgray;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      th.sortable {
+        position: relative;
+        cursor: pointer;
+      }
+
+      th.sortable::after {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        vertical-align: middle;
+        border-top: 5px solid;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+      }
+
+      th.sortable.asc::after {
+        border-top: none;
+        border-bottom: 5px solid;
+      }
+
+      td {
+        height: 71px !important;
+        vertical-align: middle;
+        text-align: left;
+
+        .url-container {
+          margin-left: 10px;
+
+          .name-container {
+            a {
+              color: cornflowerblue !important;
+            }
+
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+
+          .link-container {
+            div {
+              color: lightgray !important;
+              margin-right: 5px;
+              font-size: 16px;
+            }
+
+            div:hover {
+              color: cornflowerblue !important;
+            }
+          }
+        }
+
+        img {
+          border-radius: 5px;
+          border: 1px solid lightgray;
+          margin-left: 10px;
+        }
+
+        button {
+          background-color: white;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          border: 1px solid lightgray;
+          border-radius: 5px;
+          color: gray;
+          margin-left: 15px;
+          font-weight: 500;
+
+          i {
+            font-size: 17px;
+            font-weight: bold;
+          }
+        }
+
+        button:hover {
+          color: cornflowerblue;
+          border-color: cornflowerblue;
+        }
+
+        a {
+          color: black !important;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: cornflowerblue !important;
+        }
+      }
+
+      .company-column {
+        display: flex;
+        align-items: center;
+        min-width: 350px;
+        box-shadow: 3px 0 0 0 rgba(0, 0, 0, 0.2), 1px 0 0 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+  }
+
+  .table-wrapper::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background-color: rgb(243, 243, 243);
+  }
+
+  .table-wrapper::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .table-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #737272;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1 !important;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 13px;
+  width: 250px;
+  background-color: rgb(63, 63, 63);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  left: 0%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.command-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  .left-container {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    inset: 0px auto auto -34px !important;
+    padding: 0px;
+  }
+
+  button {
+    color: gray;
+    font-weight: 500;
+    border-color: gray;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    i {
+      margin-right: 6px;
+    }
+  }
+
+  button:hover {
+    color: cornflowerblue !important;
+    border-color: cornflowerblue !important;
+    background-color: white !important;
+  }
+
+  button:disabled {
+    background-color: white;
+    color: gray;
+    border-color: gray;
+  }
+
+  .dropdown-item {
+    text-align: center;
+
+    button {
+      width: 100%;
+      justify-content: space-between;
+      text-align: center;
+    }
+  }
+}

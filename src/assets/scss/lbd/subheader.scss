@@ -1,0 +1,43 @@
+.navbar-expand {
+  padding: 0px !important;
+  border-bottom: 1px solid lightgray;
+
+  .nav-link {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    color: gray;
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 10px;
+    border-bottom: 1px solid rgb(243, 243, 243);
+  }
+
+  .menu-icon {
+    margin-right: 0px;
+  }
+
+  #collasible-nav-dropdown {
+    border-bottom: none !important;
+  }
+
+  .menu-icon:hover {
+    color: cornflowerblue;
+    border-bottom: none !important;
+    background-color: rgb(243, 243, 243);
+  }
+
+  .nav-link:hover {
+    color: cornflowerblue;
+    border-bottom: 1px solid cornflowerblue;
+  }
+
+  .active {
+    color: cornflowerblue !important;
+    border-bottom: 1px solid cornflowerblue;
+  }
+
+  .bi {
+    font-size: 18px;
+    margin-right: 6px;
+  }
+}
